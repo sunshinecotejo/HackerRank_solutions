@@ -1,4 +1,4 @@
-
+public class Difference{
 
     public Difference(int[] elements){
         this.elements = elements;
@@ -21,3 +21,4 @@
         }          
     }
 
+}
