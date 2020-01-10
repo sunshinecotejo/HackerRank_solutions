@@ -21,7 +21,7 @@ process.stdin.on('end', _ => {
 function readLine() {
     return inputString[currentLine++];
 }
-
+//12
 /**
 *   The variables 'firstInteger', 'firstDecimal', and 'firstString' are declared for you -- do not modify them.
 *   Print three lines:
@@ -45,12 +45,21 @@ function performOperation(secondInteger, secondDecimal, secondString) {
     const firstString = 'HackerRank ';
     
     // Write code that uses console.log to print the sum of the 'firstInteger' and 'secondInteger' (converted to a Number        type) on a new line.
-    
+    secondInteger = parseInt(secondInteger);
+    console.log(firstInteger + secondInteger);
     
     // Write code that uses console.log to print the sum of 'firstDecimal' and 'secondDecimal' (converted to a Number            type) on a new line.
-    
+    secondDecimal = parseFloat(secondDecimal);
+    console.log(firstDecimal +  secondDecimal);
     
     // Write code that uses console.log to print the concatenation of 'firstString' and 'secondString' on a new line. The        variable 'firstString' must be printed first.
-    
+    console.log(firstString + secondString);
 }
 
+function main() {
+    const secondInteger = readLine();
+    const secondDecimal = readLine();
+    const secondString = readLine();
+    
+    performOperation(secondInteger, secondDecimal, secondString);
+}
